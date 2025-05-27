@@ -1,0 +1,29 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fc;
+    color: #333;
+}
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 2em 1em;
+    text-align: center;
+}
+main {
+    padding: 1em;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    background: #eaeaea;
+}
