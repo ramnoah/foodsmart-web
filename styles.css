@@ -1,4 +1,30 @@
-nav {
+/* General */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    color: #222;
+  }
+  
+  /* Encabezado */
+  header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 1.5em 1em;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0 0 0.3em;
+  }
+  
+  header p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* Navegación */
+  nav {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em;
@@ -11,18 +37,64 @@ nav {
     background: #2575fc;
     color: white;
     border: none;
-    padding: 0.5em 1em;
+    padding: 0.6em 1.2em;
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
-    transition: background 0.2s;
+    transition: background 0.2s ease;
   }
   
   nav button:hover {
     background: #1b5edb;
   }
   
+  /* Contenido dinámico */
   main {
     padding: 1em;
+  }
+  
+  main h2 {
+    color: #2575fc;
+    margin-top: 0;
+  }
+  
+  main p, main ul, main form {
+    font-size: 1rem;
+  }
+  
+  ul {
+    padding-left: 1.2em;
+  }
+  
+  form input,
+  form button {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.6em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  form button:hover {
+    background-color: #4e0fa3;
+  }
+  
+  /* Footer */
+  footer {
+    background: #e0e0e0;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
   }
   
