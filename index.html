@@ -1,30 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FoodSmart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
 <body>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>FoodSmart</title>
-        <link rel="stylesheet" href="styles.css" />
-      </head>
-      
-  
-    <nav>
-      <button onclick="loadView('dashboard')">Dashboard</button>
-      <button onclick="loadView('registro')">Registro</button>
-      <button onclick="loadView('acciones')">Acciones</button>
-      <button onclick="loadView('perfil')">Perfil</button>
-      <button onclick="loadView('notificaciones')">Notificaciones</button>
-      <button onclick="loadView('modo')">Modo Rápido</button>
-    </nav>
-  
-    <main id="app">
-      <!-- Aquí se cargan las vistas -->
-    </main>
-  
-    <script>
-        window.addEventListener("DOMContentLoaded", () => {
-          loadView('dashboard');
-        });
-      </script>
-      
-  </body>
-  
+  <header>
+    <h1>FoodSmart</h1>
+    <p>Gestión ágil de alimentos sobrantes</p>
+  </header>
+
+  <nav>
+    <button onclick="loadView('dashboard')">Dashboard</button>
+    <button onclick="loadView('registro')">Registro</button>
+    <button onclick="loadView('acciones')">Acciones</button>
+    <button onclick="loadView('perfil')">Perfil</button>
+    <button onclick="loadView('notificaciones')">Notificaciones</button>
+    <button onclick="loadView('modo')">Modo Rápido</button>
+  </nav>
+
+  <main id="app">
+    <!-- Aquí se cargará dinámicamente la vista -->
+  </main>
+
+  <footer>
+    <p>© 2025 FoodSmart | Proyecto académico</p>
+  </footer>
+
+  <script src="views.js"></script>
+  <script>
+    // Carga vista inicial al abrir la app
+    window.addEventListener("DOMContentLoaded", () => {
+      loadView('dashboard');
+    });
+  </script>
+</body>
+</html>
