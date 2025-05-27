@@ -5,9 +5,9 @@ function renderDashboard() {
       <h2>Dashboard</h2>
       <p>Consulta rápida de sobrantes con alertas de prioridad.</p>
       <ul>
-        <li>⚠️ Tomates (10) - Prioridad alta</li>
-        <li>⏳ Pan integral (5) - Vence pronto</li>
-        <li>✅ Pollo cocido (3) - Listo para donar</li>
+        <li> Tomates (10) - Prioridad alta</li>
+        <li> Pan integral (5) - Vence pronto</li>
+        <li> Pollo cocido (3) - Listo para donar</li>
       </ul>
     </section>
   `;
@@ -54,9 +54,9 @@ function renderNotificaciones() {
     <section class="screen">
       <h2>Notificaciones</h2>
       <ul>
-        <li>✅ 10kg de papas registrados</li>
-        <li>📢 Campaña activa: Lunes sin desperdicio</li>
-        <li>✅ 5kg de arroz entregados</li>
+        <li> 10kg de papas registrados</li>
+        <li> Campaña activa: Lunes sin desperdicio</li>
+        <li> 5kg de arroz entregados</li>
       </ul>
     </section>
   `;
