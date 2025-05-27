@@ -1,29 +1,28 @@
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6fc;
-    color: #333;
-}
-header {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+    background: #f5f5f5;
+    padding: 1em;
+  }
+  
+  nav button {
+    background: #2575fc;
     color: white;
-    padding: 2em 1em;
-    text-align: center;
-}
-main {
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  
+  nav button:hover {
+    background: #1b5edb;
+  }
+  
+  main {
     padding: 1em;
-}
-.card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    padding: 1em;
-    margin-bottom: 1em;
-}
-footer {
-    text-align: center;
-    padding: 1em;
-    font-size: 0.9em;
-    background: #eaeaea;
-}
+  }
+  

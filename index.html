@@ -1,45 +1,22 @@
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodSmart</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 <body>
     <header>
-        <h1>FoodSmart</h1>
-        <p>Gestión ágil de alimentos sobrantes</p>
+      <h1>FoodSmart</h1>
+      <p>Explora las vistas de la app</p>
     </header>
-    <main>
-        <section class="card">
-            <h2>Dashboard</h2>
-            <p>Consulta rápida de sobrantes con alertas de prioridad.</p>
-        </section>
-        <section class="card">
-            <h2>Registro Rápido</h2>
-            <p>Registra un sobrante en menos de 10 segundos.</p>
-        </section>
-        <section class="card">
-            <h2>Acciones Rápidas</h2>
-            <p>Donar o vender con descuento con un solo clic.</p>
-        </section>
-        <section class="card">
-            <h2>Perfil del Restaurante</h2>
-            <p>Actualiza tus datos, preferencias y productos gestionados.</p>
-        </section>
-        <section class="card">
-            <h2>Notificaciones</h2>
-            <p>Recibe alertas de caducidad o solicitudes de donación.</p>
-        </section>
-        <section class="card">
-            <h2>Modo Rápido</h2>
-            <p>Registra sobrantes comunes con solo un toque.</p>
-        </section>
+  
+    <nav>
+      <button onclick="loadView('dashboard')">Dashboard</button>
+      <button onclick="loadView('registro')">Registro</button>
+      <button onclick="loadView('acciones')">Acciones</button>
+      <button onclick="loadView('perfil')">Perfil</button>
+      <button onclick="loadView('notificaciones')">Notificaciones</button>
+      <button onclick="loadView('modo')">Modo Rápido</button>
+    </nav>
+  
+    <main id="app">
+      <!-- Aquí se cargan las vistas -->
     </main>
-    <footer>
-        <p>© 2025 FoodSmart | Proyecto académico</p>
-    </footer>
-</body>
-</html>
+  
+    <script src="views.js"></script>
+  </body>
+  
