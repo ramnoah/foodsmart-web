@@ -1,16 +1,30 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f0f2f5;
-  color: #222;
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9fc;
+  color: #333;
 }
 
 header {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: white;
-  padding: 2em 1em;
+  padding: 2.5em 1em;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header p {
+  margin-top: 0.5em;
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
 nav {
@@ -18,39 +32,53 @@ nav {
   flex-wrap: wrap;
   gap: 0.5em;
   justify-content: center;
-  background: #f5f5f5;
+  background: #f1f2f6;
   padding: 1em;
+  box-shadow: inset 0 -1px 0 #ddd;
 }
 
 nav button {
-  background: #2575fc;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
   color: white;
   border: none;
-  padding: 0.6em 1.2em;
-  border-radius: 6px;
+  padding: 0.6em 1.3em;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, transform 0.2s;
 }
 
 nav button:hover {
-  background: #1b5edb;
+  background: linear-gradient(to right, #5c1ac1, #1c5ae0);
+  transform: scale(1.05);
 }
 
 main {
-  padding: 1em;
+  padding: 2em 1em;
+  max-width: 800px;
+  margin: auto;
+  transition: opacity 0.3s ease;
+}
+
+#app.fade-out {
+  opacity: 0;
 }
 
 .screen {
   background: white;
-  margin-bottom: 1.5em;
-  padding: 1em;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 2em;
+  padding: 1.5em;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border-left: 5px solid #6a11cb;
 }
 
 .screen h2 {
   color: #2575fc;
+  font-size: 1.5rem;
+  margin-bottom: 0.8em;
 }
 
 .screen form {
@@ -60,23 +88,31 @@ main {
 
 .screen input,
 .screen button {
-  padding: 0.6em;
+  padding: 0.75em;
   font-size: 1rem;
-  margin-bottom: 0.8em;
-  border-radius: 6px;
+  margin-bottom: 1em;
+  border-radius: 8px;
   border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.screen input:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 117, 252, 0.2);
 }
 
 .screen button {
   background-color: #6a11cb;
   color: white;
   border: none;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s ease;
 }
 
 .screen button:hover {
-  background-color: #4e0fa3;
+  background-color: #5010a3;
 }
 
 .screen ul {
@@ -85,16 +121,19 @@ main {
 }
 
 .screen li {
-  background: #fff;
+  background: #fdfdff;
   margin-bottom: 0.6em;
-  padding: 0.6em 1em;
+  padding: 0.7em 1em;
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  font-size: 0.95rem;
 }
 
 footer {
-  background: #e0e0e0;
+  background: #e3e3e3;
   text-align: center;
   padding: 1em;
   font-size: 0.9em;
+  margin-top: 2em;
+  color: #555;
 }
